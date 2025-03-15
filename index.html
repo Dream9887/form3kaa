@@ -1,7 +1,7 @@
 <!DOCTYPE html>
    <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=0.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3KAA Info</title>
       <style>
         body {
@@ -14,7 +14,10 @@
             -webkit-backdrop-filter: blur(10px);
         }
         #title-info {
-            border: solid black;
+            border: 2px solid black;
+            border-top: 80px;
+            border-left: 80px;
+            border-right: 80px;
         }
         #description {
             border: solid;
@@ -24,6 +27,7 @@
         }
         .guru-kelas-info {
            color: pink;
+           font-family: cursive;
         }
         ul {
             margin-left: 43%;
@@ -59,9 +63,39 @@
             margin-top: -10%;
             margin-bottom: 3%;
         }
+        #news {
+          color: lightgreen;
+          border: 5px solid lightcyan;
+        }
+        #owner {
+          animation-name: colorChange;
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+        }
+        @keyframes colorChange {
+          0% {
+            color: lightblue;
+          }
+          25% {
+            color: lightgreen;
+          }
+          46% {
+            color: lightpink;
+          }
+          72% {
+            color: purple;
+          }
+          90% {
+            color: pink;
+          }
+          100% {
+            color: green;
+          }
+        }
       </style>
   </head>
   <body>
+    <marquee id="news">Latest news from SDH: 17.3.25 will have iftar at school. Everyone are pleased to join iftar! Maximum 300 students. Happy iftar!</marquee>
     <h1 id="title-info">Welcome to 3KAA Info!</h1>
      <p id="description">What is KAA?:<br>
         Kelas Aliran Agama (KAA) or Religious Stream Class (Arabic: الفصل الديني)<br>
@@ -102,7 +136,7 @@
         <li>Muhammad Khairul Imran</li>
         <li>Muhammad Syakir</li>
         <li>Adam</li>
-        <li>Luqman</li>
+        <li id="owner">Luqman</li>
         <li>Adib</li>
         <li>Kamarul Aqil</li>
         <li>Rizqullah</li>
